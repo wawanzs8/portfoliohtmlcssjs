@@ -172,7 +172,7 @@ main{
     margin:50px auto;
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    
 
 }
 
@@ -340,7 +340,7 @@ main{
 .servicemain{
     flex-wrap: wrap;
     justify-content: center;
-    width: 400px;
+    width: 100%;
 }
 
 .card{
@@ -372,7 +372,97 @@ main{
 
 }
 
-
 @media (max-width: 480px) {
+    .navbarnav.scrolledd{
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
 
+    #hamburger{
+        display: inline-block;
+    }
+    
+    .navbarnav{
+        
+        position: absolute;
+        height: 100vh;
+        top:100%;
+        right: -250px;
+        z-index: -1;
+        background-color: #191919;
+        width: 250px;
+        transition: .3s;
+      
+       
+    }
+
+    .active{
+        right: 0px;
+    }
+
+
+
+
+    .navbarnav a{
+        text-align: center;
+        padding: 20px;
+        display: block !important;
+       
+        
+    }
+
+    .hero{
+        height: 80vh;
+    }
+
+.content{
+   flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about{
+    padding: 30px;
+    align-items: start;
+    
+}
+.about img{
+    height: 300px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.service{
+    justify-content: center;
+
+}
+
+.servicemain{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+ 
+.skilsisi{
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cardskils{
+    
+    width: 100%;
+    margin: 5px;
+}
+
+.hero{
+    background-position: -300px;
+}
 }
